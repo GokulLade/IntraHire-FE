@@ -1,0 +1,97 @@
+:root {
+  --primary: #0f3d4c;
+  --secondary: #2bb673;
+  --white: #ffffff;
+}
+
+/* =========================
+   PAGE WRAPPER
+========================= */
+.home-wrapper {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+.navbar {
+  height: 70px;
+  padding: 0 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--white);
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--primary);
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-btn {
+  background: var(--secondary);
+  color: white;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* =========================
+   HERO SECTION (FIXED)
+========================= */
+.hero-section {
+  width: 100vw;
+  min-height: calc(100vh - 70px);
+
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.45),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url("/src/assets/home-bg.png");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  color: white;
+}
+
+/* =========================
+   BUTTON
+========================= */
+.primary-btn {
+  margin-top: 20px;
+  padding: 14px 30px;
+  background: var(--secondary);
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer {
+  text-align: center;
+  padding: 12px;
+  background: white;
+}
