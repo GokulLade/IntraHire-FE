@@ -7,9 +7,10 @@ const Home = () => {
 
   return (
     <div className="home-wrapper">
-
       <nav className="navbar">
-        <div className="logo">IntraHire</div>
+        <div className="logo">
+          <img src="./src/assets/logo.png" width={500} height={500} />
+        </div>
 
         <div className="nav-right">
           <span>About</span>
@@ -29,10 +30,7 @@ const Home = () => {
         </button>
       </section>
 
-      <footer className="footer">
-        © 2026 IntraHire. All rights reserved.
-      </footer>
-
+      <footer className="footer">© 2026 IntraHire. All rights reserved.</footer>
     </div>
   );
 };
